@@ -53,7 +53,7 @@ p {
   color: white;
 }
 
-/* header options */
+/* header section */
 header {
   width: 100%;
   margin: auto;
@@ -68,7 +68,7 @@ header {
   right: -11%; 
 } */
 
-/* navbar options */
+/* navbar section */
 .navbar {
   height: 50%;
   width: 80%;
@@ -101,7 +101,7 @@ header {
   color: var(--darkGrayishBlue);
 }
 
-/* header-top options */
+/* header-top section */
 
 .header-top {
   width: 80%;
@@ -141,4 +141,23 @@ header {
   width: 50%;
   margin-top: 5rem;
   text-align: right;
+}
+
+/* main section */
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.text-description {
+  width: 50%;
+  text-align: left;
+}
+
+.list-description {
+  width: 50%;
 }
