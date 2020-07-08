@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Manage landing page</title>
 </head>
+
 <body>
   <header>
-    <img class="logo" src="images/logo.svg" alt="logo">
-      <nav>
-        <ul class="links">
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#aboutus">About Us</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#community">Community</a></li>
-        </ul>
-    </nav>
-    <a class="cta" href="#getstarted"><button>Get Started</button></a>
+    <!-- <div class="bg-tablet">
+      <img src="./images/bg-tablet-pattern.svg" alt="bg-tablet-pattern">
+    </div> -->
 
-<!-- Navbar on small screens -->
-<navmobile class="mobilelist">
-  <ul id="linksmobile">
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#product">Product</a></li>
-    <li><a href="#aboutus">About Us</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#community">Community</a></li>
-  </ul>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-<script>
-function myFunction() {
-    var x = document.getElementById("linksmobile");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-</script>
-</navmobile>
-</header>
-<!--
+    <nav class="navbar">
+      <img id="logo" src="images/logo.svg" alt="logo">
+      <ul class="links">
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      <a class="btn" href="#getstarted">Get Started</a>
+    </nav>
+
+    <section class="header-top">
+      <div class="entry-information">
+        <h1>Bring everyone together to build better products.</h1>
+        <p>Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.</p>
+        <a href="#getstarted" class="btn">Get Started</a>
+      </div>
+      <div class="graphs">
+        <img src="./images/illustration-intro.svg" alt="">
+      </div>
+    </section>
+  </header>
+
+  <!-- Navbar on small screens -->
+  <!-- <navmobile class="mobilelist">
+      <ul id="linksmobile">
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("linksmobile");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+    </navmobile> -->
+  <!-- </header> -->
+
+  <!--
 
   </div>
   Pricing
@@ -132,4 +153,5 @@ function myFunction() {
   </div>
 -->
 </body>
+
 </html>

@@ -1,93 +1,144 @@
-@media (min-width:500px){
-    .hide-mobile{
-        display:none!important
-    }}
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+/* root options */
+:root {
+  --brightRed: hsl(12, 88%, 59%);
+  --darkBlue: hsl(228, 39%, 23%);
+  --darkGrayishBlue: hsl(227, 12%, 61%);
+  --veryDarkBlue: hsl(233, 12%, 13%);
+  --veryPaleRed: hsl(13, 100%, 96%);
+  --varyLightGray: hsl(0, 0%, 98%);
+}
 
+/* global options */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
 }
 
-li, a {
-    font-weight: 500;
-    font-size: 16px;
-    color:hsl(228, 39%, 23%);
-    text-decoration: none;
-}
-button {
-    color: white;
+body {
+  background: url(/images/bg-tablet-pattern.svg) no-repeat 124% 160%;
 }
 
+li,
+a {
+  font-weight: 700;
+  color: var(--darkBlue);
+  text-decoration: none;
+}
+
+p {
+  font-weight: 500;
+  color: var(--darkGrayishBlue);
+}
+
+.btn {
+  padding: 10px 28px;
+  background-color: hsl(12, 88%, 59%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: rgb(218, 216, 216);
+  text-align: center;
+  box-shadow: 0rem 0.3rem 0.8rem var(--brightRed);
+}
+
+.btn:hover {
+  opacity: 0.5;
+  color: white;
+}
+
+/* header options */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+  width: 100%;
+  margin: auto;
 }
 
-.logo {
-    cursor: pointer;
+/* .bg-tablet {
+  position: absolute;
+  /* width: 500px; */
+/* height: 500px; */
+/* z-index: -1;
+  top: -25%;
+  right: -11%; 
+} */
+
+/* navbar options */
+.navbar {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto auto auto;
+  z-index: 1;
+}
+
+#logo {
+  cursor: pointer;
 }
 
 .links {
-    list-style: none;
+  list-style: none;
 }
 
-.links li{
-    display: inline-block;
-    padding: 0px 20px;
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.links li a{
-    transition: all 0.3s ease 0s;
+.links li a {
+  transition: all 0.3s ease 0s;
 }
 
-.links li a:hover{
-    color: hsl(227, 12%, 61%);
+.links li a:hover {
+  color: var(--darkGrayishBlue);
 }
 
-button {
-    padding: 9px 25px;
-    background-color: hsl(12, 88%, 59%);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+/* header-top options */
+
+.header-top {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  margin: auto;
 }
 
-button:hover {
-    opacity: 0.5;
+.entry-information {
+  margin-top: 8rem;
+  width: 40%;
+  text-align: left;
 }
 
-.mobilelist {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+.entry-information h1 {
+  font-weight: 700;
+  color: var(--darkBlue);
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 
-.mobilelist #linksmobile {
-    display: none;
+.entry-information p {
+  margin: 2.5rem 0;
+  text-align: justify;
+  width: 75%;
 }
 
-.mobilelist a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+.entry-information .btn {
+  display: inline-block;
+  /* margin-top: 2rem; */
 }
 
-.mobilelist a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.mobilelist a:hover {
-    background-color: #ddd;
-    color: black;
+.graphs {
+  /* background-color: pink; */
+  width: 50%;
+  margin-top: 5rem;
+  text-align: right;
 }
