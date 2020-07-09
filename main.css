@@ -161,12 +161,12 @@ header {
 .text-description p {
   margin-top: 2rem;
   text-align: left;
-  width: 50%;
+  width: 60%;
 }
 
 /* list description section */
 .list-description {
-  width: 50%;
+  width: 48%;
 }
 
 .list-point {
@@ -197,7 +197,7 @@ header {
 }
 
 .list-description p {
-  width: 65%;
+  width: 95%;
 }
 
 .point-title {
