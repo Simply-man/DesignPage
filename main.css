@@ -21,7 +21,7 @@
 }
 
 body {
-  background: url(/images/bg-tablet-pattern.svg) no-repeat 124% 160%;
+  background: url(/images/bg-tablet-pattern.svg) no-repeat 125% -32%;
 }
 
 li,
@@ -38,7 +38,7 @@ p {
 
 .btn {
   padding: 10px 28px;
-  background-color: hsl(12, 88%, 59%);
+  background-color: var(--brightRed);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -58,15 +58,6 @@ header {
   width: 100%;
   margin: auto;
 }
-
-/* .bg-tablet {
-  position: absolute;
-  /* width: 500px; */
-/* height: 500px; */
-/* z-index: -1;
-  top: -25%;
-  right: -11%; 
-} */
 
 /* navbar section */
 .navbar {
@@ -145,12 +136,14 @@ header {
 
 /* main section */
 
+/* .text-description section */
+
 .description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 80%;
-  margin: 4rem auto;
+  margin: 4.5rem auto;
 }
 
 .text-description {
@@ -158,6 +151,57 @@ header {
   text-align: left;
 }
 
+.text-description h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--darkBlue);
+  line-height: 2.8rem;
+}
+
+.text-description p {
+  margin-top: 2rem;
+  text-align: left;
+  width: 50%;
+}
+
+/* list description section */
 .list-description {
   width: 50%;
+}
+
+.list-point {
+  display: flex;
+  flex-direction: row;
+}
+
+.points-div {
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.point-tag {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid var(--brightRed);
+  border-radius: 1rem;
+  background-color: var(--brightRed);
+  display: flex;
+  align-items: center;
+}
+
+.point-tag .tag-p {
+  color: white;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
+}
+
+.list-description p {
+  width: 65%;
+}
+
+.point-title {
+  font-weight: 700;
+  color: var(--darkBlue);
+  margin-bottom: 1rem;
 }
