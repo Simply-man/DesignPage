@@ -263,3 +263,8 @@ header {
 .person .person-desc {
   margin: 1rem 3rem 3rem 3rem;
 }
+
+/* Simplify section */
+.simplify {
+  width: 100%;
+}
