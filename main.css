@@ -21,7 +21,8 @@
 }
 
 body {
-  background: url(/images/bg-tablet-pattern.svg) no-repeat 125% -32%;
+  background: url(/images/bg-tablet-pattern.svg) no-repeat 125% -32%,
+    url(/images/bg-tablet-pattern.svg) no-repeat -70% 195%;
 }
 
 li,
