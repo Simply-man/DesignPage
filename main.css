@@ -266,5 +266,29 @@ header {
 
 /* Simplify section */
 .simplify {
+  margin-top: 10rem;
   width: 100%;
+  background: url("./images/bg-tablet-pattern.svg") no-repeat 25% 10%,
+    url("./images/bg-tablet-pattern.svg") no-repeat 136% 120%;
+  background-size: 40%;
+  background-color: var(--brightRed);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.simplify .simplify-text {
+  font-weight: 600;
+  font-size: 2.5rem;
+  width: 32%;
+  margin: 4rem 0;
+  line-height: 3rem;
+}
+
+.simplify .btn-color-reverse {
+  background-color: white;
+  color: var(--brightRed);
+  box-shadow: 0rem 0.3rem 0.8rem var(--veryDarkBlues);
 }
