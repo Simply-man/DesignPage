@@ -300,5 +300,75 @@ header {
 .simplify .btn-color-reverse {
   background-color: white;
   color: var(--brightRed);
-  box-shadow: 0rem 0.3rem 0.8rem var(--veryDarkBlues);
+  box-shadow: 0rem 0.05rem 0.1rem var(--veryDarkBlue);
+}
+
+/* Footer section */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--veryDarkBlue);
+}
+
+/* Images section */
+
+.images {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.5rem 0;
+}
+
+#logo-white {
+  margin-bottom: 6rem;
+}
+
+.images .icons img {
+  margin: auto 0.2rem;
+}
+
+/* List section */
+
+.footer .lists {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: -8rem;
+}
+
+.footer .lists li {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer .lists a {
+  font-weight: 400;
+  color: var(--darkGrayishBlue);
+}
+
+/* Contact section */
+.contact {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+input[type="text"] {
+  color: green;
+}
+
+.btn-no-shadow {
+  box-shadow: none;
+  color: white;
 }
