@@ -28,7 +28,7 @@
         <li><a href="#careers">Careers</a></li>
         <li><a href="#community">Community</a></li>
       </ul>
-      <a class="btn" href="#getstarted">Get Started</a>
+      <a class="btn btn-hover" href="#getstarted">Get Started</a>
     </nav>
 
     <!-- Top header section -->
@@ -37,7 +37,7 @@
         <h1>Bring everyone together to build better products.</h1>
         <p>Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.</p>
-        <a href="#getstarted" class="btn">Get Started</a>
+        <a href="#getstarted" class="btn btn-hover">Get Started</a>
       </div>
       <div class="graphs">
         <img src="./images/illustration-intro.svg" alt="">
@@ -124,12 +124,14 @@
             from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
         </div>
       </div>
-      <a href="#" class="btn"> Get Started</a>
+      <a href="#" class="btn btn-hover"> Get Started</a>
     </section>
     <section class="simplify">
       <div class="simplify-background"> </div>
       <h1 class="simplify-text"> Simplify how your team works today.</h1>
-      <a href="" class="btn btn-color-reverse">Get Started</a>
+      <a href="#" class="btn btn-color-reverse">
+        <p>Get Started</p>
+      </a>
       <!-- </div> -->
     </section>
   </main>
@@ -138,11 +140,11 @@
       <div class="images">
         <img src="./images/logo-white.svg" alt="logo" id="logo-white">
         <div class="icons">
-          <img src="./images/icon-facebook.svg" alt="icon-facebook">
-          <img src="./images/icon-youtube.svg" alt="icon-youtube">
-          <img src="./images/icon-twitter.svg" alt="icon-twitter">
-          <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
-          <img src="./images/icon-instagram.svg" alt="icon-instagram">
+          <a href="https://www.facebook.com"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a>
+          <a href="https://www.youtube.com"><img src="./images/icon-youtube.svg" alt="icon-youtube"></a>
+          <a href="https://www.twitter.com"><img src="./images/icon-twitter.svg" alt="icon-twitter"></a>
+          <a href="https://www.pinterest.com"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a>
+          <a href="https://www.instagram.com"><img src="./images/icon-instagram.svg" alt="icon-instagram"></a>
         </div>
       </div>
       <div class="lists">
@@ -160,9 +162,13 @@
       </div>
       <div class="contact">
         <form class="contact-form">
-          <input type="text" name="text" id="text-input" placeholder="Updates in your inbox…">
-          <button class="btn btn-no-shadow">Go</button>
+          <input type="email" name="text" id="text-input" placeholder="Updates in your inbox…">
+          <button type="submit" class="btn btn-no-shadow">
+            <p>Go</p>
+          </button>
+          <span class="valid-email">Please insert a valid email.</span>
         </form>
+
         <p>Copyright 2020. All Rights Reserved</p>
       </div>
     </div>
@@ -202,6 +208,7 @@
     Coded by <a href="#">Maciej Kędziora</a>.
   </div>
 -->
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

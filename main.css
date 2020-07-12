@@ -50,7 +50,7 @@ p {
   box-shadow: 0rem 0.3rem 0.8rem var(--brightRed);
 }
 
-.btn:hover {
+.btn-hover:hover {
   opacity: 0.5;
   color: white;
 }
@@ -285,7 +285,6 @@ header {
   /* background-repeat: no-repeat; */
   width: 100%;
   height: 100%;
-  z-index: 1;
   opacity: 0.1;
 }
 
@@ -301,6 +300,16 @@ header {
   background-color: white;
   color: var(--brightRed);
   box-shadow: 0rem 0.05rem 0.1rem var(--veryDarkBlue);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.simplify .btn-color-reverse p {
+  color: var(--brightRed);
+}
+
+.simplify .btn-color-reverse p:hover {
+  opacity: 0.5;
 }
 
 /* Footer section */
@@ -332,6 +341,11 @@ header {
   margin: auto 0.2rem;
 }
 
+.images .icons img:hover {
+  filter: invert(47%) sepia(69%) saturate(1978%) hue-rotate(337deg)
+    brightness(96%) contrast(97%);
+}
+
 /* List section */
 
 .footer .lists {
@@ -354,31 +368,53 @@ header {
 }
 
 .footer .lists a:hover {
-  text-decoration: underline;
+  color: var(--brightRed);
 }
 
 /* Contact section */
 .contact {
   width: 25%;
-  height: 100%;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 3.5rem 0;
 }
 
 .contact .contact-form {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
-.contact-form input {
+input[type="email"] {
   padding: 10px 28px;
-  border: none;
+  border: 1px solid;
   border-radius: 2rem;
+  outline: none;
   margin-right: 0.3rem;
 }
 
+.text-input-active {
+  color: var(--brightRed);
+  border: 1px solid var(--brightRed);
+}
+
+.valid-email {
+  color: var(--brightRed);
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0.3rem 0 0 1.1rem;
+  display: none;
+  position: absolute;
+}
+
 .btn-no-shadow {
+  outline: none;
   box-shadow: none;
+}
+
+.btn-no-shadow:hover {
+  background: hsl(12, 100%, 74%);
+}
+
+.btn-no-shadow p {
   color: white;
 }
