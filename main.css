@@ -647,16 +647,70 @@ input[type="email"] {
 
 /* Media Query from 769px to 768px */
 @media only screen and (min-width: 450px) and (max-width: 768px) {
-  * {
-    font-size: 14px;
+  body {
+    background: url(/images/bg-tablet-pattern.svg) no-repeat -365% -11%,
+      url(/images/bg-tablet-pattern.svg) no-repeat -220% 55%;
+  }
+
+  .navbar,
+  .header-top,
+  .description {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  .header-top {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links,
+  .btn-mobile {
+    display: none;
   }
 
   .graphs {
-    width: 45%;
-    margin-top: 7rem;
+    width: 90%;
+    text-align: center;
   }
-  .graphs img {
-    width: 27rem;
-    height: 27rem;
+
+  .entry-information {
+    margin-top: 1rem;
+    width: 95%;
+    text-align: center;
+  }
+
+  .entry-information p {
+    margin: 2.5rem auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-description {
+    width: 95%;
+    text-align: center;
+  }
+
+  .text-description p {
+    width: 80%;
+    text-align: center;
+    margin: 1rem auto 3rem auto;
+  }
+
+  .list-description {
+    width: 75%;
+  }
+
+  .people {
+    margin: 0rem auto;
+  }
+
+  .person {
+    width: 90%;
   }
 }
