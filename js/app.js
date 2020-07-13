@@ -28,3 +28,7 @@ inputForm.addEventListener("keyup", (e) => {
     inputForm.classList.add("text-input-active");
   }
 });
+
+// Slider JS
+// const tagSliders = document.querySelectorAll(".people-desc-sliders > a");
+// const newAr = Array.from(tagSliders).map((item) => item.getAttribute("href"));

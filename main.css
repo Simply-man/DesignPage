@@ -227,10 +227,16 @@ header {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   align-items: center;
+  -webkit-overflow-scrolling: touch;
 }
 
 .people-desc::-webkit-scrollbar {
+  display: none;
+}
+
+.people-desc-sliders {
   display: none;
 }
 
@@ -674,6 +680,11 @@ input[type="email"] {
     text-align: center;
   }
 
+  .graphs img {
+    width: 100%;
+    height: 100%;
+  }
+
   .entry-information {
     margin-top: 1rem;
     width: 95%;
@@ -710,7 +721,122 @@ input[type="email"] {
     margin: 0rem auto;
   }
 
+  .people-desc {
+    width: 70%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   .person {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 15rem;
+    margin: 5rem 0 1rem 0;
+  }
+
+  .people-desc-sliders {
+    display: inline-flex;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .people-desc-sliders > a {
+    border: 0.1px solid var(--brightRed);
+    border-radius: 50%;
+    padding: 0.2rem;
+  }
+
+  .active-slide {
+    background-color: var(--brightRed);
+  }
+
+  .simplify {
+    margin-top: 8rem;
+    flex-direction: column;
+  }
+
+  .simplify-background {
+    position: absolute;
+    background: url("./images/bg-tablet-pattern.svg") no-repeat 25% 11%;
+    /* background-size: 40%; */
+  }
+
+  .simplify .simplify-text {
+    width: 60%;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .simplify .btn-color-reverse {
+    margin-bottom: 5rem;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .images {
+    width: 60%;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin: 2rem auto;
+  }
+
+  #logo-white {
+    width: 15rem;
+    height: 3rem;
+    margin: 2rem auto 5rem auto;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .images .icons img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .footer .lists {
+    width: 61%;
+    margin-left: 0;
+  }
+
+  .contact {
+    margin-top: 2rem;
     width: 90%;
+    height: 5rem;
+    align-items: center;
+  }
+
+  input[type="email"] {
+    padding: 10px 100px;
+  }
+
+  .copy {
+    position: absolute;
+    margin: auto;
+    bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 536px) {
+  .person {
+    height: 18rem;
+  }
+
+  .person .person-desc {
+    margin: 1rem 2rem 3rem 2rem;
+  }
+  input[type="email"] {
+    padding: 10px 50px;
   }
 }
