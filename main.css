@@ -415,6 +415,7 @@ input[type="email"] {
   color: white;
 }
 
+/* Media Query from 1201px to 1366px */
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
   body {
     background: url(/images/bg-tablet-pattern.svg) no-repeat 111% -2%,
@@ -448,6 +449,7 @@ input[type="email"] {
   }
 }
 
+/* Media Query from 1024px to 1200px */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   body {
     background: url(/images/bg-tablet-pattern.svg) no-repeat 150% -5%,
