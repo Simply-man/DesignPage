@@ -77,6 +77,10 @@ header {
   cursor: pointer;
 }
 
+#hamburger {
+  display: none;
+}
+
 .links {
   list-style: none;
 }
@@ -651,8 +655,8 @@ input[type="email"] {
   }
 }
 
-/* Media Query from 769px to 768px */
-@media only screen and (min-width: 450px) and (max-width: 768px) {
+/* Media Query from 0px to 768px */
+@media only screen and (max-width: 768px) {
   body {
     background: url(/images/bg-tablet-pattern.svg) no-repeat -365% -11%,
       url(/images/bg-tablet-pattern.svg) no-repeat -220% 55%;
@@ -665,6 +669,9 @@ input[type="email"] {
     justify-content: space-evenly;
   }
 
+  #hamburger {
+    display: block;
+  }
   .header-top {
     flex-direction: column-reverse;
     align-items: center;
@@ -828,7 +835,7 @@ input[type="email"] {
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 536px) {
+@media only screen and (max-width: 536px) {
   .person {
     height: 18rem;
   }
@@ -838,5 +845,43 @@ input[type="email"] {
   }
   input[type="email"] {
     padding: 10px 50px;
+  }
+}
+
+/* Media query for 449px and less */
+@media only screen and (max-width: 449px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .graphs {
+    margin-top: 3rem;
+  }
+
+  .entry-information {
+    margin-top: 0.5rem;
+  }
+
+  .entry-information h1 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+
+  .entry-information p {
+    width: 90%;
+    margin: 1.5rem auto 2.5rem auto;
+  }
+
+  .description {
+    margin: 6rem auto 4.5rem auto;
+  }
+  .text-description h2 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .list-description,
+  .text-description p {
+    width: 100%;
   }
 }
