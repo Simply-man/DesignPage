@@ -81,6 +81,10 @@ header {
   display: none;
 }
 
+#close {
+  display: none;
+}
+
 .links {
   list-style: none;
 }
@@ -662,7 +666,10 @@ input[type="email"] {
       url(/images/bg-tablet-pattern.svg) no-repeat -220% 55%;
   }
 
-  .navbar,
+  .navbar {
+    width: 90%;
+    justify-content: space-between;
+  }
   .header-top,
   .description {
     width: 90%;
@@ -850,6 +857,11 @@ input[type="email"] {
 
 /* Media query for 449px and less */
 @media only screen and (max-width: 449px) {
+  body {
+    background: url(/images/bg-tablet-pattern.svg) no-repeat -404% -3%,
+      url(/images/bg-tablet-pattern.svg) no-repeat 327% 17%;
+    background-size: 105%, 80%;
+  }
   .navbar {
     justify-content: space-between;
   }
@@ -873,7 +885,11 @@ input[type="email"] {
   }
 
   .description {
-    margin: 6rem auto 4.5rem auto;
+    margin: 6rem auto 2rem auto;
+    width: 100%;
+  }
+  .text-description {
+    width: 90%;
   }
   .text-description h2 {
     font-size: 2.2rem;
@@ -883,5 +899,170 @@ input[type="email"] {
   .list-description,
   .text-description p {
     width: 100%;
+  }
+
+  .list-pont {
+    display: block;
+  }
+
+  .point-tag {
+    position: absolute;
+    left: 6%;
+  }
+
+  .points-div {
+    margin-left: 0;
+  }
+
+  .pt {
+    background-color: var(--veryPaleRed);
+    width: 84%;
+    margin-left: auto;
+    height: 2.2rem;
+    position: relative;
+    z-index: -1;
+  }
+  .point-title {
+    position: absolute;
+    left: 11%;
+    max-width: 89%;
+  }
+
+  .point-description {
+    margin-left: auto;
+    margin-top: 1rem;
+  }
+
+  .people-desc {
+    width: 90%;
+  }
+
+  .person .person-desc {
+    margin: 1rem 0.5rem 3rem 0.5rem;
+  }
+
+  .people-desc-sliders {
+    margin-bottom: 2rem;
+  }
+
+  .simplify {
+    margin-top: 3rem;
+  }
+
+  .simplify-background {
+    position: absolute;
+    background: url("./images/bg-tablet-pattern.svg") no-repeat 860% -55%;
+    background-size: 110%;
+  }
+
+  .simplify .simplify-text {
+    width: 80%;
+    margin-top: 5rem;
+  }
+
+  #logo-white {
+    width: unset;
+    height: unset;
+    margin: 4rem auto;
+  }
+
+  .footer .lists {
+    width: 70%;
+  }
+
+  .footer .lists a {
+    color: var(--varyLightGray);
+  }
+
+  .images {
+    width: 80%;
+  }
+  .images .icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contact {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  input[type="email"] {
+    padding: 10px 30px;
+  }
+  input[type="email"]::placeholder {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .btn-no-shadow {
+    padding: 10px 32px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url(/images/bg-tablet-pattern.svg) no-repeat -404% -3%,
+      url(/images/bg-tablet-pattern.svg) no-repeat 339% 16%;
+    background-size: 105%, 80%;
+  }
+
+  h1 {
+    font-size: 2.4em;
+    line-height: 2.6rem;
+  }
+
+  .entry-information {
+    width: 100%;
+  }
+
+  .simplify-background {
+    position: absolute;
+    background: url("./images/bg-tablet-pattern.svg") no-repeat 855% -221%;
+    background-size: 110%;
+  }
+
+  .simplify .simplify-text {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    background: url(/images/bg-tablet-pattern.svg) no-repeat -397% -1.5%,
+      url(/images/bg-tablet-pattern.svg) no-repeat 339% 15%;
+    background-size: 105%, 80%;
+  }
+
+  .entry-information h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .text-description h2 {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .people-title {
+    font-size: 2rem;
+  }
+
+  .simplify .simplify-text {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  input[type="email"] {
+    padding: 10px 10px;
+    margin-right: 0rem;
+  }
+
+  .btn-no-shadow {
+    padding: 12px 32px;
   }
 }
