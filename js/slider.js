@@ -55,8 +55,10 @@ const sliderJS = () => {
     return findIndex;
   };
 
+  // Setting images next to each other
   setPersonPosition(person, personPosition);
 
+  // Listener for click buttons
   personButtons.forEach((item) =>
     item.addEventListener("click", (e) => {
       setPersonButton(e);
