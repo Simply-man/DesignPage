@@ -1,0 +1,69 @@
+// Function to run SliderJS  if screen is smaller than 768px
+const init = () => {
+  const query = window.matchMedia("(max-width: 768px)");
+
+  if (query.matches) {
+    sliderJS();
+  }
+};
+
+const sliderJS = () => {
+  const peopleDesc = document.querySelector(".people-desc");
+  const person = Array.from(document.querySelectorAll(".person"));
+  const personPosition = person[0].getBoundingClientRect().width;
+  const personButtons = Array.from(
+    document.querySelectorAll(".person-buttons")
+  );
+
+  // Displaing all images next to each other
+  const setPersonPosition = (person, personPosition) => {
+    person.forEach((element, index) => {
+      element.style.left = `${personPosition * index}px`;
+    });
+  };
+
+  // Display right card with person
+  const displayPerson = (person, index) => {
+    const posPerson = person[index].style.left;
+    person.forEach((item) => {
+      item.classList.remove("active-person");
+      item.style.transform = `translateX(-${posPerson})`;
+      setPersonPosition(person, personPosition);
+    });
+    person[index].classList.add("active-person");
+    person[index].style.transform = `translateX(-${posPerson})`;
+  };
+
+  //  Set buttons for a person
+  const setPersonButton = (e) => {
+    const currentButton = e.target;
+
+    // Array for removing class from all buttons
+    Array.from(currentButton.parentElement.children).forEach((item) => {
+      item.classList.remove("active-slide");
+    });
+
+    // Add class to actual clicked button
+    currentButton.classList.add("active-slide");
+  };
+
+  // Find index of clicked button
+  const index = (personButtons) => {
+    const findIndex = personButtons.findIndex((i) =>
+      i.classList.contains("active-slide")
+    );
+    return findIndex;
+  };
+
+  setPersonPosition(person, personPosition);
+
+  personButtons.forEach((item) =>
+    item.addEventListener("click", (e) => {
+      setPersonButton(e);
+      displayPerson(person, index(personButtons));
+    })
+  );
+};
+
+// Get DOMContentLoaded if query is smaller than 768px
+window.addEventListener("DOMContentLoaded", init());

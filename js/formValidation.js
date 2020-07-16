@@ -1,3 +1,4 @@
+// Form Validation
 const form = document.querySelector(".contact-form");
 const inputForm = form["text-input"];
 // const textInput = document.getElementById("text-input");
@@ -28,7 +29,3 @@ inputForm.addEventListener("keyup", (e) => {
     inputForm.classList.add("text-input-active");
   }
 });
-
-// Slider JS
-// const tagSliders = document.querySelectorAll(".people-desc-sliders > a");
-// const newAr = Array.from(tagSliders).map((item) => item.getAttribute("href"));
