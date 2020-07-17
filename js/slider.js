@@ -1,14 +1,4 @@
-// Function to run SliderJS  if screen is smaller than 768px
-const init = () => {
-  const query = window.matchMedia("(max-width: 768px)");
-
-  if (query.matches) {
-    sliderJS();
-  }
-};
-
 const sliderJS = () => {
-  const peopleDesc = document.querySelector(".people-desc");
   const person = Array.from(document.querySelectorAll(".person"));
   const personPosition = person[0].getBoundingClientRect().width;
   const personButtons = Array.from(
@@ -66,6 +56,3 @@ const sliderJS = () => {
     })
   );
 };
-
-// Get DOMContentLoaded if query is smaller than 768px
-window.addEventListener("DOMContentLoaded", init());

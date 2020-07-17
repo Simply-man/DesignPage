@@ -662,8 +662,9 @@ input[type="email"] {
 /* Media Query from 0px to 768px */
 @media only screen and (max-width: 768px) {
   body {
-    background: url(/images/bg-tablet-pattern.svg) no-repeat -365% -11%,
-      url(/images/bg-tablet-pattern.svg) no-repeat -220% 55%;
+    background: url(/images/bg-tablet-pattern.svg) no-repeat -425% -10%,
+      url(/images/bg-tablet-pattern.svg) no-repeat 300% 23%;
+    background-size: 105%, 81%;
   }
 
   .back-mobile {
@@ -698,6 +699,11 @@ input[type="email"] {
 
   #hamburger {
     display: block;
+    z-index: 2;
+  }
+
+  #close {
+    display: none;
     z-index: 2;
   }
 
