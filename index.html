@@ -12,14 +12,18 @@
 </head>
 
 <body>
+
+  <!-- Div for hover background on site for mobile-->
+  <div></div>
+
   <!-- Header section -->
   <header>
-    <!-- Navigation for mid/large screns -->
+    <!-- Navigation -->
     <nav class="navbar">
       <img id="logo" src="images/logo.svg" alt="logo">
       <img id="hamburger" src="images/icon-hamburger.svg" alt="icon-hamburger">
       <img id="close" src="images/icon-close.svg" alt="icon-close">
-      <ul class="links links-mobile">
+      <ul class="links">
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#aboutus">About Us</a></li>
@@ -28,9 +32,6 @@
       </ul>
       <a class="btn btn-hover btn-mobile" href="#getstarted">Get Started</a>
     </nav>
-
-    <!-- Navigation for mobile -->
-
 
     <!-- Top header section -->
     <section class="header-top">
@@ -195,42 +196,9 @@
     </div>
   </footer>
 
-  <!-- Navbar on small screens -->
-  <!-- <navmobile class="mobilelist">
-      <ul id="linksmobile">
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#careers">Careers</a></li>
-        <li><a href="#community">Community</a></li>
-      </ul>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <script>
-        function myFunction() {
-          var x = document.getElementById("linksmobile");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-      </script>
-    </navmobile> -->
-  <!-- </header> -->
-
-  <!--
-
-  </div> 
- 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Maciej Kędziora</a>.
-  </div>
--->
   <script src="./js/slider.js"></script>
   <script src="./js/formValidation.js"></script>
+  <script src="./js/mobileMenu.js"></script>
 </body>
 
 </html>

@@ -666,9 +666,29 @@ input[type="email"] {
       url(/images/bg-tablet-pattern.svg) no-repeat -220% 55%;
   }
 
+  .back-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(70, 70, 70, 0.6) 0%,
+      rgba(255, 255, 255, 0.2) 100%
+    );
+    z-index: 1;
+    transition: display 250ms ease-in-out;
+  }
+
+  header {
+    position: relative;
+  }
+
   .navbar {
     width: 90%;
     justify-content: space-between;
+    /* position: relative; */
   }
   .header-top,
   .description {
@@ -678,7 +698,9 @@ input[type="email"] {
 
   #hamburger {
     display: block;
+    z-index: 2;
   }
+
   .header-top {
     flex-direction: column-reverse;
     align-items: center;
@@ -687,6 +709,25 @@ input[type="email"] {
   .links,
   .btn-mobile {
     display: none;
+  }
+
+  .links-mobile {
+    width: 90%;
+    height: 40%;
+    top: 5%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 1);
+    z-index: 2;
+    border-radius: 4px;
+  }
+
+  .links-mobile > a {
+    color: white;
   }
 
   .graphs {
