@@ -700,6 +700,7 @@ input[type="email"] {
   #hamburger {
     display: block;
     z-index: 2;
+    cursor: pointer;
   }
 
   #close {
